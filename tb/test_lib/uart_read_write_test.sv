@@ -1,4 +1,4 @@
-class uart_read_write_test extends apb_base_test;
+class uart_read_write_test extends apb_uart_base_test;
         `uvm_component_utils(uart_read_write_test)
 
         apb_directed_seq dseq;

@@ -3,7 +3,7 @@
 ../tb/top/uart_interface.sv
 ../tb/pkg/apb_agent_pkg.sv
 ../tb/pkg/uart_agent_pkg.sv
-../tb/pkg/apb_env_pkg.sv
-../tb/pkg/apb_test_pkg.sv
+../tb/pkg/apb_uart_env_pkg.sv
+../tb/pkg/apb_uart_test_pkg.sv
 ../tb/top/apb_assertion_module.sv
-../tb/top/apb_tb_top.sv
+../tb/top/apb_uart_tb_top.sv

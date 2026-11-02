@@ -14,8 +14,8 @@ SEED ?= 1
 
 UVMVM_VERBOSITY = UVM_LOW
 
-TOP       = apb_tb_top
-SNAPSHOT  = apb_tb_top_snap
+TOP       = apb_uart_tb_top
+SNAPSHOT  = apb_uart_tb_top_snap
 TIMESCALE = 1ns/1ps
 RTL_SRC   = $(RTL_DIR)/io_generic_fifo.sv \
 	    $(RTL_DIR)/uart_interrupt.sv \
