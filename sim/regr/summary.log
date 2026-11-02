@@ -1,0 +1,3 @@
+uart_read_test (run 1 seed=2) : PASS
+uart_write_test (run 1 seed=2) : PASS
+uart_read_write_test (run 1 seed=2) : PASS

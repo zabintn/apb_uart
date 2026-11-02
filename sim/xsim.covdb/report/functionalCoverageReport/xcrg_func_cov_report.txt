@@ -1,0 +1,355 @@
+
+ Xcrg Functional Coverage Report 
+
+ // To generate a more detailed report in html format, please run xcrg -dir <database> -report_format html -report_dir <dir>
+ // This is a text report also in CSV format. By exporting to Excel and using , as the delimiter, the data can be split into individual rows and columns
+ // This report contains 3 sections, Total Summary, CoverGroups Summary and CoverPoint Tables sections 
+ // In order to navigate to a CoverPoint's Table, the TableTag printed for the respective covergroup/instance can be grepped in this report
+ // For example, if covergroup name is g1 and coverpoint is cp1, the TableTag to go to the Group's CoverPoint Table summary is g1_cp1 
+ // For example, if covergroup name is g1, instance name is i1, coverpoint is cp1, the TableTag to go to the Instance's CoverPoint Table summary is g1_i1_cp1 
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Total Summary ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+   Date             :, Mon Nov  2 17:50:35 2026 +06
+   User             :, nashita
+   Version          :, Vivado Simulator Coverage Report 2025.2
+   Command Line     :, /tools/2025.2/Vivado/bin/unwrapped/lnx64.o/xcrg -report_format text -dir xsim.covdb -report_dir xsim.covdb/report 
+   Number of Tests  :, 1
+
+   Coverage Score            :, 73.9583
+   Total Insts Score         :, 73.9583
+   Total no of Cover Groups  :, 2
+   Total no of Instances     :, 2
+
+
+     CgName,                                           Score,      NumInsts,   AvgInstScore,   Weight,     Goal,       Merge Insts,    Get Inst Cov,   Per Inst,   AutoBinMax,     Comment,    
+
+       apb_env_pkg::apb_functional_cov::apb_cg           ,81.25       ,1           ,81.25           ,1           ,100         ,0               ,0               ,0           ,64              ,            ,
+       apb_env_pkg::apb_functional_cov::uart_cg          ,66.6667     ,1           ,66.6667         ,1           ,100         ,0               ,0               ,0           ,64              ,            ,
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CoverGroups Summary ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Cover Group Details : apb_env_pkg::apb_functional_cov::apb_cg
+
+CgName,                                           Score,      NumInsts,   AvgInstScore,   Weight,     Goal,       Merge Insts,    Get Inst Cov,   Per Inst,   AutoBinMax,     Comment,    
+
+apb_env_pkg::apb_functional_cov::apb_cg           ,81.25       ,1           ,81.25           ,1           ,100         ,0               ,0               ,0           ,64              ,            ,
+
+      Instances of CoverGroup - apb_env_pkg::apb_functional_cov::apb_cg
+
+             InstName,                                         Score,      Weight,     Goal,       AtLeast,    AutoBinMax, PrintMissing,   IsInst,     Comment,    
+             	his .apb_cg                                      ,81.25       ,1           ,100         ,1           ,64          ,0               ,1           ,            ,
+
+
+      Instance 	his .apb_cg Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    AutoBinMax, Comment,    
+             cp_pwrite                                         ,apb_cg_	his .apb_cg_cp_pwrite,2           ,0           ,2           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_psel                                           ,apb_cg_	his .apb_cg_cp_psel,1           ,0           ,1           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_penable                                        ,apb_cg_	his .apb_cg_cp_penable,2           ,0           ,2           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_pready                                         ,apb_cg_	his .apb_cg_cp_pready,2           ,1           ,1           ,50          ,100         ,1           ,1           ,64          ,            ,
+             cp_paddr                                          ,apb_cg_	his .apb_cg_cp_paddr,2           ,1           ,1           ,50          ,100         ,1           ,1           ,64          ,            ,
+             cp_pslverr                                        ,apb_cg_	his .apb_cg_cp_pslverr,2           ,1           ,1           ,50          ,100         ,1           ,1           ,64          ,            ,
+
+
+      Instance 	his .apb_cg Cross Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    Comment,    
+             cx_addr_err                                       ,apb_cg_	his .apb_cg_cx_addr_err,2           ,0           ,2           ,100         ,100         ,1           ,1           ,            ,
+             cx_apb_phases                                     ,apb_cg_	his .apb_cg_cx_apb_phases,2           ,0           ,2           ,100         ,100         ,1           ,1           ,            ,
+
+
+
+
+
+
+
+
+Cover Group Details : apb_env_pkg::apb_functional_cov::uart_cg
+
+CgName,                                           Score,      NumInsts,   AvgInstScore,   Weight,     Goal,       Merge Insts,    Get Inst Cov,   Per Inst,   AutoBinMax,     Comment,    
+
+apb_env_pkg::apb_functional_cov::uart_cg          ,66.6667     ,1           ,66.6667         ,1           ,100         ,0               ,0               ,0           ,64              ,            ,
+
+      Instances of CoverGroup - apb_env_pkg::apb_functional_cov::uart_cg
+
+             InstName,                                         Score,      Weight,     Goal,       AtLeast,    AutoBinMax, PrintMissing,   IsInst,     Comment,    
+             	his .uart_cg                                     ,66.6667     ,1           ,100         ,1           ,64          ,0               ,1           ,            ,
+
+
+      Instance 	his .uart_cg Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    AutoBinMax, Comment,    
+             cp_reg                                            ,uart_cg_	his .uart_cg_cp_reg,5           ,2           ,3           ,60          ,100         ,1           ,1           ,64          ,            ,
+             cp_rw                                             ,uart_cg_	his .uart_cg_cp_rw,2           ,0           ,2           ,100         ,100         ,1           ,1           ,64          ,            ,
+
+
+      Instance 	his .uart_cg Cross Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    Comment,    
+             cx_reg_rw                                         ,uart_cg_	his .uart_cg_cx_reg_rw,10          ,6           ,4           ,40          ,100         ,1           ,1           ,            ,
+
+
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CoverPoint Tables::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_pwrite
+ Table tag :, apb_cg_	his .apb_cg_cp_pwrite
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,0           ,2           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      write       ,48          ,1           ,
+      read        ,21          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_psel
+ Table tag :, apb_cg_	his .apb_cg_cp_psel
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   1           ,0           ,1           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      sel         ,69          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_penable
+ Table tag :, apb_cg_	his .apb_cg_cp_penable
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,0           ,2           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      en_able     ,46          ,1           ,
+      dis_able    ,23          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_pready
+ Table tag :, apb_cg_	his .apb_cg_cp_pready
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,1           ,1           ,50          ,
+
+                      Uncovered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      not_ready   ,0           ,1           ,
+
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      ready       ,69          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_paddr
+ Table tag :, apb_cg_	his .apb_cg_cp_paddr
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,1           ,1           ,50          ,
+
+                      Uncovered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      invalid     ,0           ,1           ,
+
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      valid       ,69          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .apb_cg, Variable :, cp_pslverr
+ Table tag :, apb_cg_	his .apb_cg_cp_pslverr
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,1           ,1           ,50          ,
+
+                      Uncovered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      error       ,0           ,1           ,
+
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      okay        ,46          ,1           ,
+
+
+
+
+
+
+ Cross Cover Point Table for Inst : 	his .apb_cg, Variable :, cx_addr_err
+ Table tag :, apb_cg_	his .apb_cg_cx_addr_err
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ Total,          2           ,0           ,2           ,100         ,
+ User,           2           ,0           ,2           ,1           ,
+
+                 User Covered bins 
+
+      Name,           Hit Count,  AtLeast,    
+      wr_err          ,45          ,1           ,
+      rd_err          ,21          ,1           ,
+
+
+
+
+
+
+ Cross Cover Point Table for Inst : 	his .apb_cg, Variable :, cx_addr_err
+ Table tag :, apb_cg_	his .apb_cg_cx_addr_err
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ Total,          2           ,0           ,2           ,100         ,
+ User,           2           ,0           ,2           ,1           ,
+
+                 User Covered bins 
+
+      Name,           Hit Count,  AtLeast,    
+      wr_err          ,45          ,1           ,
+      rd_err          ,21          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .uart_cg, Variable :, cp_reg
+ Table tag :, uart_cg_	his .uart_cg_cp_reg
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   5           ,2           ,3           ,60          ,
+
+                      Uncovered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      iir_fcr     ,0           ,1           ,
+      lsr         ,0           ,1           ,
+
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      thr_rbr_dll ,42          ,1           ,
+      ier_dlm     ,9           ,1           ,
+      lcr         ,18          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : 	his .uart_cg, Variable :, cp_rw
+ Table tag :, uart_cg_	his .uart_cg_cp_rw
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,0           ,2           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      write       ,48          ,1           ,
+      read        ,21          ,1           ,
+
+
+
+
+
+
+ Cross Cover Point Table for Inst : 	his .uart_cg, Variable :, cx_reg_rw
+ Table tag :, uart_cg_	his .uart_cg_cx_reg_rw
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ Total,          10          ,6           ,4           ,40          ,
+ Automatic,      10          ,6           ,4           ,0.4         ,
+
+                 Auto Uncovered bins 
+
+      cp_reg          ,cp_rw           ,Hit Count,  AtLeast,    
+      ier_dlm         ,read            ,0           ,1           ,
+      iir_fcr         , *              ,0           ,1           ,
+      lcr             ,read            ,0           ,1           ,
+      lsr             , *              ,0           ,1           ,
+
+                 Auto Covered bins 
+
+      cp_reg          ,cp_rw           ,Hit Count,  AtLeast,    
+      thr_rbr_dll     ,write           ,21          ,1           ,
+      thr_rbr_dll     ,read            ,21          ,1           ,
+      ier_dlm         ,write           ,9           ,1           ,
+      lcr             ,write           ,18          ,1           ,
+
+
+
+
+
+

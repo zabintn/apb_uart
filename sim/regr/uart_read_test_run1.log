@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov  2 17:50:20 2026
+# Process ID         : 4193861
+# Current directory  : /home/nashita/Desktop/workspace/apb_uart/sim
+# Command line       : xsim -log regr/uart_read_test_run1.log -mode tcl -source {xsim.dir/apb_tb_top_snap/xsim_script.tcl}
+# Log file           : /home/nashita/Desktop/workspace/apb_uart/sim/regr/uart_read_test_run1.log
+# Journal file       : /home/nashita/Desktop/workspace/apb_uart/sim/xsim.jou
+# Running On         : vlsi-vivado
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-10400 CPU @ 2.90GHz
+# CPU Frequency      : 3998.898 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 41875 MB
+# Swap memory        : 27648 MB
+# Total Virtual      : 69524 MB
+# Available Virtual  : 45166 MB
+#-----------------------------------------------------------
+source xsim.dir/apb_tb_top_snap/xsim_script.tcl
+# xsim {apb_tb_top_snap} -testplusarg UVM_TESTNAME=uart_read_test -testplusarg UVM_VERBOSITY= -testplusarg CLK_FREQUENCY=100 -cov_db_dir xsim.covdb -cov_db_name uart_read_test_run1 -autoloadwcfg -runall -sv_seed 2
+Time resolution is 1 ps
+run -all
+UVM_INFO /tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+Clock frequency overwritten to 100 MHz
+UVM_INFO /tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test uart_read_test...
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/apb_base_test.sv(11) @ 0: uvm_test_top [uvm_test_top] BEFORE BUILD PHASE OF BASE TEST
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/apb_base_test.sv(14) @ 0: uvm_test_top [uvm_test_top] AFTER BUILD PHASE OF BASE TEST
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_env.sv(13) @ 0: uvm_test_top.env_o [apb_env] BEFORE ENVIRONMENT CONSTRUCTOR
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_env.sv(19) @ 0: uvm_test_top.env_o [apb_env] AFTER ENVIRONMENT CONSTRUCTOR
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_agent.sv(13) @ 0: uvm_test_top.env_o.agt1 [apb_agent] BEFORE AGENT BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_agent.sv(20) @ 0: uvm_test_top.env_o.agt1 [apb_agent] AFTER AGENT BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(11) @ 0: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(14) @ 0: uvm_test_top.env_o.agt1.mon [apb_monitor] INSIDE UVM MONITOR BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_seqcr.sv(10) @ 0: uvm_test_top.env_o.agt1.seqr [apb_seqcr] INSIDE SEQUENCER BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_agent.sv(13) @ 0: uvm_test_top.env_o.agt2 [uvm_test_top.env_o.agt2] BEFORE UART AGENT BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_agent.sv(19) @ 0: uvm_test_top.env_o.agt2 [uvm_test_top.env_o.agt2] INSIDE UART AGENT BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(12) @ 0: uvm_test_top.env_o.agt2.uart_drv [uvm_test_top.env_o.agt2.uart_drv] INSIDE UART DRIVER BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_monitor.sv(17) @ 0: uvm_test_top.env_o.agt2.uart_mon [uart_monitor] INSIDE UART MONITOR BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/uart_sequencer.sv(10) @ 0: uvm_test_top.env_o.agt2.uart_seqr [uart_sequencer] INSIDE SEQUENCER BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_functional_cov.sv(11) @ 0: uvm_test_top.env_o.fc [apb_functional_cov] INSIDE DRIVER BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(27) @ 0: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD BUILD PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(18) @ 0: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(20) @ 0: uvm_test_top.env_o.agt1.mon [apb_monitor] INSIDE UVM MONITOR CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_seqcr.sv(15) @ 0: uvm_test_top.env_o.agt1.seqr [apb_seqcr] INSIDE SEQUENCER CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_agent.sv(25) @ 0: uvm_test_top.env_o.agt1 [apb_agent] INSIDE AGENT CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(22) @ 0: uvm_test_top.env_o.agt2.uart_drv [uvm_test_top.env_o.agt2.uart_drv] INSIDE UART DRIVER CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_monitor.sv(26) @ 0: uvm_test_top.env_o.agt2.uart_mon [uvm_test_top.env_o.agt2.uart_mon] INSIDE UART MONITOR CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/uart_sequencer.sv(15) @ 0: uvm_test_top.env_o.agt2.uart_seqr [uart_sequencer] INSIDE SEQUENCER CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_agent.sv(24) @ 0: uvm_test_top.env_o.agt2 [uvm_test_top.env_o.agt2] INSIDE UART AGENT CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(31) @ 0: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD CONNECT PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_env.sv(24) @ 0: uvm_test_top.env_o [apb_env] INSIDE CONNECT PHASE OF UVM ENVIRONMENT
+UVM_INFO /tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/apb_base_test.sv(18) @ 0: uvm_test_top [uvm_test_top] BEFORE RUN PHASE OF BASE TEST
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/apb_base_test.sv(20) @ 0: uvm_test_top [uvm_test_top] AFTER RUN PHASE OF BASE TEST
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/uart_read_test.sv(22) @ 0: uvm_test_top [uvm_test_top] INSIDE UART WRITE TEST
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/uart_read_test.sv(24) @ 0: uvm_test_top [uvm_test_top] CONFIGURING UART DUT VIA APB WRITE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_env.sv(32) @ 0: uvm_test_top.env_o [apb_env] INSIDE RUN PHASE OF UVM ENVIRONMENT
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(66) @ 0: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_agent.sv(29) @ 0: uvm_test_top.env_o.agt2 [uvm_test_top.env_o.agt2] INSIDE UART AGENT RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/uart_sequencer.sv(19) @ 0: uvm_test_top.env_o.agt2.uart_seqr [uart_sequencer] INSIDE SEQUENCER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(27) @ 0: uvm_test_top.env_o.agt2.uart_drv [uvm_test_top.env_o.agt2.uart_drv] INSIDE UART DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_agent.sv(30) @ 0: uvm_test_top.env_o.agt1 [apb_agent] INSIDE AGENT RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_seqcr.sv(19) @ 0: uvm_test_top.env_o.agt1.seqr [apb_seqcr] INSIDE SEQUENCER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(23) @ 0: uvm_test_top.env_o.agt1.mon [apb_monitor] INSIDE UVM MONITOR RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 0: uvm_test_top.env_o.agt1.seqr@@dseq [apb_directed_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 25000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 35000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 40000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=80, paddr=3, pwrite=1
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 45000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 45000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=0, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 45000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 45000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(77) @ 45000: uvm_test_top.env_o.sb [apb_scoreboard] WRITE: addr=3, data=80, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 45000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=0, fail count=0
+------------------------------------------------------------------------------------
+Name                           Type          Size  Value                            
+------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @962                             
+  paddr                        integral      32    'h3                              
+  pwdata                       integral      32    'h80                             
+  pwrite                       integral      32    'h1                              
+  psel                         integral      32    'h0                              
+  pready                       integral      32    'h1                              
+  prdata                       integral      32    'h0                              
+  penable                      integral      32    'h0                              
+  pslverr                      integral      32    'h0                              
+  begin_time                   time          64    25000                            
+  end_time                     time          64    45000                            
+  depth                        int           32    'd2                              
+  parent sequence (name)       string        4     dseq                             
+  parent sequence (full name)  string        33    uvm_test_top.env_o.agt1.seqr.dseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr     
+------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 45000: uvm_test_top.env_o.agt1.seqr@@dseq [apb_directed_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 55000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 60000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=10, paddr=0, pwrite=1
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 65000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 65000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=0, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 65000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 65000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(77) @ 65000: uvm_test_top.env_o.sb [apb_scoreboard] WRITE: addr=0, data=10, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 65000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=0, fail count=0
+------------------------------------------------------------------------------------
+Name                           Type          Size  Value                            
+------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1040                            
+  paddr                        integral      32    'h0                              
+  pwdata                       integral      32    'h10                             
+  pwrite                       integral      32    'h1                              
+  psel                         integral      32    'h0                              
+  pready                       integral      32    'h1                              
+  prdata                       integral      32    'h0                              
+  penable                      integral      32    'h0                              
+  pslverr                      integral      32    'h0                              
+  begin_time                   time          64    45000                            
+  end_time                     time          64    65000                            
+  depth                        int           32    'd2                              
+  parent sequence (name)       string        4     dseq                             
+  parent sequence (full name)  string        33    uvm_test_top.env_o.agt1.seqr.dseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr     
+------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 65000: uvm_test_top.env_o.agt1.seqr@@dseq [apb_directed_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 75000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 80000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=0, paddr=1, pwrite=1
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 85000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 85000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=0, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 85000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 85000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(77) @ 85000: uvm_test_top.env_o.sb [apb_scoreboard] WRITE: addr=1, data=0, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 85000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=0, fail count=0
+------------------------------------------------------------------------------------
+Name                           Type          Size  Value                            
+------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1078                            
+  paddr                        integral      32    'h1                              
+  pwdata                       integral      32    'h0                              
+  pwrite                       integral      32    'h1                              
+  psel                         integral      32    'h0                              
+  pready                       integral      32    'h1                              
+  prdata                       integral      32    'h0                              
+  penable                      integral      32    'h0                              
+  pslverr                      integral      32    'h0                              
+  begin_time                   time          64    65000                            
+  end_time                     time          64    85000                            
+  depth                        int           32    'd2                              
+  parent sequence (name)       string        4     dseq                             
+  parent sequence (full name)  string        33    uvm_test_top.env_o.agt1.seqr.dseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr     
+------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 85000: uvm_test_top.env_o.agt1.seqr@@dseq [apb_directed_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 95000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 100000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=3, paddr=3, pwrite=1
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 105000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 105000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=0, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 105000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 105000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(77) @ 105000: uvm_test_top.env_o.sb [apb_scoreboard] WRITE: addr=3, data=3, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 105000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=0, fail count=0
+------------------------------------------------------------------------------------
+Name                           Type          Size  Value                            
+------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1116                            
+  paddr                        integral      32    'h3                              
+  pwdata                       integral      32    'h3                              
+  pwrite                       integral      32    'h1                              
+  psel                         integral      32    'h0                              
+  pready                       integral      32    'h1                              
+  prdata                       integral      32    'h0                              
+  penable                      integral      32    'h0                              
+  pslverr                      integral      32    'h0                              
+  begin_time                   time          64    85000                            
+  end_time                     time          64    105000                           
+  depth                        int           32    'd2                              
+  parent sequence (name)       string        4     dseq                             
+  parent sequence (full name)  string        33    uvm_test_top.env_o.agt1.seqr.dseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr     
+------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../test_lib/uart_read_test.sv(62) @ 105000: uvm_test_top [uvm_test_top] configuration done. reading bytes.
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/uart_base_seq.sv(11) @ 105000: uvm_test_top.env_o.agt2.uart_seqr@@useq [uart_base_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(42) @ 105000: uvm_test_top.env_o.agt2.uart_drv [uart_driver] Sending 0xfa8e790e
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(42) @ 1805000: uvm_test_top.env_o.agt2.uart_drv [uart_driver] Sending 0xe19315f0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(42) @ 3505000: uvm_test_top.env_o.agt2.uart_drv [uart_driver] Sending 0xef9c4f94
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/uart_driver.sv(42) @ 5205000: uvm_test_top.env_o.agt2.uart_drv [uart_driver] Sending 0xe4aa265a
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 6905000: uvm_test_top.env_o.agt1.seqr@@rdseq [apb_read_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 6915000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 6920000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=0, paddr=0, pwrite=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 6925000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 6925000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=e, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 6925000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 6925000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(95) @ 6925000: uvm_test_top.env_o.sb [apb_scoreboard] RX MATCH: e
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 6925000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=1, fail count=0
+-------------------------------------------------------------------------------------
+Name                           Type          Size  Value                             
+-------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1212                             
+  paddr                        integral      32    'h0                               
+  pwdata                       integral      32    'h0                               
+  pwrite                       integral      32    'h0                               
+  psel                         integral      32    'h0                               
+  pready                       integral      32    'h1                               
+  prdata                       integral      32    'he                               
+  penable                      integral      32    'h0                               
+  pslverr                      integral      32    'h0                               
+  begin_time                   time          64    6905000                           
+  end_time                     time          64    6925000                           
+  depth                        int           32    'd2                               
+  parent sequence (name)       string        5     rdseq                             
+  parent sequence (full name)  string        34    uvm_test_top.env_o.agt1.seqr.rdseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr      
+-------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 6925000: uvm_test_top.env_o.agt1.seqr@@rdseq [apb_read_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 6935000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 6940000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=0, paddr=0, pwrite=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 6945000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 6945000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=f0, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 6945000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 6945000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(95) @ 6945000: uvm_test_top.env_o.sb [apb_scoreboard] RX MATCH: f0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 6945000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=2, fail count=0
+-------------------------------------------------------------------------------------
+Name                           Type          Size  Value                             
+-------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1250                             
+  paddr                        integral      32    'h0                               
+  pwdata                       integral      32    'h0                               
+  pwrite                       integral      32    'h0                               
+  psel                         integral      32    'h0                               
+  pready                       integral      32    'h1                               
+  prdata                       integral      32    'hf0                              
+  penable                      integral      32    'h0                               
+  pslverr                      integral      32    'h0                               
+  begin_time                   time          64    6925000                           
+  end_time                     time          64    6945000                           
+  depth                        int           32    'd2                               
+  parent sequence (name)       string        5     rdseq                             
+  parent sequence (full name)  string        34    uvm_test_top.env_o.agt1.seqr.rdseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr      
+-------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 6945000: uvm_test_top.env_o.agt1.seqr@@rdseq [apb_read_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 6955000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 6960000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=0, paddr=0, pwrite=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 6965000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 6965000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=94, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 6965000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 6965000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(95) @ 6965000: uvm_test_top.env_o.sb [apb_scoreboard] RX MATCH: 94
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 6965000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=3, fail count=0
+-------------------------------------------------------------------------------------
+Name                           Type          Size  Value                             
+-------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1288                             
+  paddr                        integral      32    'h0                               
+  pwdata                       integral      32    'h0                               
+  pwrite                       integral      32    'h0                               
+  psel                         integral      32    'h0                               
+  pready                       integral      32    'h1                               
+  prdata                       integral      32    'h94                              
+  penable                      integral      32    'h0                               
+  pslverr                      integral      32    'h0                               
+  begin_time                   time          64    6945000                           
+  end_time                     time          64    6965000                           
+  depth                        int           32    'd2                               
+  parent sequence (name)       string        5     rdseq                             
+  parent sequence (full name)  string        34    uvm_test_top.env_o.agt1.seqr.rdseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr      
+-------------------------------------------------------------------------------------
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../seq_lib/apb_base_seq.sv(9) @ 6965000: uvm_test_top.env_o.agt1.seqr@@rdseq [apb_read_seq] BASE SEQUENCE INSIDE BODY
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(34) @ 6975000: uvm_test_top.env_o.agt1.mon [apb_monitor] SETUP PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(42) @ 6980000: uvm_test_top.env_o.agt1.mon [apb_monitor] pwdata=0, paddr=0, pwrite=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(49) @ 6985000: uvm_test_top.env_o.agt1.mon [apb_monitor] ACCESS PHASE STARTED
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_monitor.sv(61) @ 6985000: uvm_test_top.env_o.agt1.mon [apb_monitor] prdata=5a, pready=1, pslverr=0
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(35) @ 6985000: uvm_test_top.env_o.sb [apb_scoreboard] INSIDE SCOREBOARD WRITE FUNCTION
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../agent/apb_driver.sv(31) @ 6985000: uvm_test_top.env_o.agt1.drv [apb_driver] INSIDE DRIVER RUN PHASE
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(95) @ 6985000: uvm_test_top.env_o.sb [apb_scoreboard] RX MATCH: 5a
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_scoreboard.sv(101) @ 6985000: uvm_test_top.env_o.sb [apb_scoreboard] pass count=4, fail count=0
+-------------------------------------------------------------------------------------
+Name                           Type          Size  Value                             
+-------------------------------------------------------------------------------------
+req                            apb_seq_item  -     @1326                             
+  paddr                        integral      32    'h0                               
+  pwdata                       integral      32    'h0                               
+  pwrite                       integral      32    'h0                               
+  psel                         integral      32    'h0                               
+  pready                       integral      32    'h1                               
+  prdata                       integral      32    'h5a                              
+  penable                      integral      32    'h0                               
+  pslverr                      integral      32    'h0                               
+  begin_time                   time          64    6965000                           
+  end_time                     time          64    6985000                           
+  depth                        int           32    'd2                               
+  parent sequence (name)       string        5     rdseq                             
+  parent sequence (full name)  string        34    uvm_test_top.env_o.agt1.seqr.rdseq
+  sequencer                    string        28    uvm_test_top.env_o.agt1.seqr      
+-------------------------------------------------------------------------------------
+UVM_INFO /tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 6985000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_functional_cov.sv(101) @ 6985000: uvm_test_top.env_o.fc [uvm_test_top.env_o.fc] APB FUNCTIONAL COVERAGE=81.25
+UVM_INFO /home/nashita/Desktop/workspace/apb_uart/tb/pkg/../env/apb_functional_cov.sv(102) @ 6985000: uvm_test_top.env_o.fc [uvm_test_top.env_o.fc] UART FUNCTIONAL COVERAGE=66.67
+UVM_INFO /tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 6985000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  124
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[apb_agent]     4
+[apb_directed_seq]     4
+[apb_driver]    11
+[apb_env]     4
+[apb_functional_cov]     1
+[apb_monitor]    35
+[apb_read_seq]     4
+[apb_scoreboard]    27
+[apb_seqcr]     3
+[uart_base_seq]     1
+[uart_driver]     4
+[uart_monitor]     1
+[uart_sequencer]     3
+[uvm_test_top]     7
+[uvm_test_top.env_o.agt2]     4
+[uvm_test_top.env_o.agt2.uart_drv]     3
+[uvm_test_top.env_o.agt2.uart_mon]     1
+[uvm_test_top.env_o.fc]     2
+
+$finish called at time : 6985 ns : File "/tools/2025.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+exit
+INFO: xsimkernel Simulation Memory Usage: 308144 KB (Peak: 352604 KB), Simulation CPU Usage: 1250 ms
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 17:50:23 2026...
